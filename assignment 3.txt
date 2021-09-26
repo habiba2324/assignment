@@ -1,0 +1,118 @@
+void main() {
+ 
+//Q:1
+   
+//ANS:  to not repeat the ball() mulitiple times we have to make a new list 
+// and use the toSet() and tolist() in it
+//  CODE:
+ 
+ var Ball =[1,2,2,2,4,1];
+  var newball = Ball.toSet().toList();
+  print(newball);
+  
+ //Q:2  
+//ANS: To find the difference  between 2 list:
+ //CODE:
+ List<int>first=[1,2,3,4,5,6,7];
+ List<int>second=[3,5,6,7,9,10];
+ List<int>difference=first.toSet().difference(second.toSet()).toList();
+ print(difference.toString());
+  
+//Q:3  
+//ANS:to seprate the even numbers we haveto make a new list  
+//CODE:
+  List numlist =[1,2,3,4,5,6,7,8,9,10];
+  List evenList =[];
+  for(final i in numlist){  
+  if(i.isEven){
+  evenList.add(i);
+  } else {
+  }
+  }
+  print(evenList);
+
+  
+//Q:6
+//ANS:
+//CODE: 
+List<String> fruits =["apple","banana","mango","orange","strawbery"];
+  for(var i in fruits){
+    print(i);
+  }
+//Q:5
+//ANS: tabel of 7 till 15
+ //CODE:
+ var a=7;
+  for(var i=1; i<=15; i++){
+  print("${a}x${i}=${a*i}");                        
+  }
+
+ //Q:4
+ //ANS:
+ //CODE:
+ int i,m=0,flag=0; 
+ int num=5;
+m=num~/2;
+for(i=2;i<=m;i++){
+if(num%i==0){
+print('$num is not a prime number');
+flag=1;
+break;
+}
+}
+if(flag==0){
+print('$num is prime number');  
+}
+  
+ //Q:9
+ //ANS:
+ //CODE: 
+  var hi= 5;
+  var heloo=3;
+ //for addition
+  var sumplus=hi+heloo;
+  print(sumplus);
+  //for subtraction
+  var sumsub=hi-heloo;
+  print(sumsub);
+  //for multiplication
+  var summul=hi*heloo;
+  print(summul);
+  //for division
+  var sumdiv=hi/heloo;
+  print(sumdiv);
+  //for percentge
+  var sumper=hi%heloo;
+  print(sumper);
+    
+  //Q:10
+  //ANS:
+  //CODE:
+  String string='i';
+  if(string==a){
+    print("it is vowel");
+  }
+  else if(string=="u"){
+    print("it is vowel");
+  }  
+  else if(string=="i"){
+    print("it is vowel");
+  }  
+  else if(string=="o"){
+    print("it is vowel");
+  }  
+  else{
+    print(false);
+  }  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  }
